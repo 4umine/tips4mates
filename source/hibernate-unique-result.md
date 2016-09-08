@@ -21,11 +21,11 @@ public Wechat getWechat() {
 ```java
 public Wechat getWechat() {
     String sql = "SELECT * FROM wechat limit 1";
-    Query query = this.getSession().createSQLQuery(sql).addEntity(WxToKen.class);
-    WxToKen token = (WxToKen) query.uniqueResult();
+    Query query = this.getSession().createSQLQuery(sql).addEntity(Wechat.class);
+    Wechat token = (Wechat) query.uniqueResult();
     return token;
 }
 ```
 
-hibernate的hql语句最终都是翻译成sql语句去执行，所以能用原声sql语句的尽量用sql。
+hibernate的hql语句最终都是翻译成sql语句去执行，所以能用原生sql语句的尽量用sql。
 这里用到了`limit 1`，就是从数据库取到一条记录就返回，就没必要继续往下查。
