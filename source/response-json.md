@@ -71,7 +71,7 @@ public void test(HttpServletResponse res) {
 
     //异常或非法数据
     //responseVo.fatal("测试", user);
-    
+
     RenderUtil.renderJson(responseVo, res);
 }
 ```
@@ -79,7 +79,7 @@ public void test(HttpServletResponse res) {
 ## js
 
 ```js
-$({
+$.ajax({
     url : xxxx/aaaa,
     type : 'POST',
     data : {
