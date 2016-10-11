@@ -6,3 +6,4 @@
     * [枚举](source/enum.md)
     * [响应json](source/response-json.md)
     * [json属性过滤](source/json-property-filter.md)
+    * [微信JSSDK](source/wechat-jssdk-config.md)
